@@ -11,3 +11,8 @@ At its basis, there are going to be two main categories of entities per control:
 - Engine
 
 The _engine_ is a term I am making in lieu of the above article's "style". Because this class will handle the layout an and logic of the rendered components, I think it is more apt to call this a layout engine
+
+## Other intents
+These controls will be made with the intention of having them used in an MVVM project. This is only creating the **views** and nothing to do with the models or the view models. We therefore need to keep it abstract enough that anyone can hook into these views with their own ViewModels.
+
+We are also going to assume that the ViewModels are not using any addin like Caliburn-Micro. Having you application be fundamentally dependent on these external libraries seems backwards and not sustainable
